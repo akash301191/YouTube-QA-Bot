@@ -32,7 +32,7 @@ YouTube-QA-Bot/
 
 1. **Clone the repository** (or download it):
    ```bash
-   git clone https://github.com/yourusername/YouTube-QA-Bot.git
+   git clone https://github.com/akash301191/YouTube-QA-Bot.git
    cd YouTube-QA-Bot
    ```
 
