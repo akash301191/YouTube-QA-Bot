@@ -76,7 +76,7 @@ def generate_video_summary(app: App, transcript: str) -> None:
             summary_prompt = f"Provide a concise summary for the following video transcript:\n\n{transcript}"
             summary = app.chat(summary_prompt)
         st.session_state.video_summary = summary
-    st.write(st.session_state.video_summary)
+    st.markdown(st.session_state.video_summary)
 
 def ask_question(app: App) -> None:
     """
@@ -87,7 +87,7 @@ def ask_question(app: App) -> None:
     if query:
         try:
             answer = app.chat(query)
-            st.write(answer)
+            st.markdown(answer)
             # Initialize conversation transcript if not already present
             if "conversation_transcript" not in st.session_state:
                 st.session_state.conversation_transcript = ""
